@@ -1,1 +1,1 @@
-package lists.chap00.list00_03;public class Main {   public static void main(String[] args) {    System.out.println("湊くんかっこいい！最高！");  }}/* 注意：このコードはコンパイルエラーが発生するコードです */
+package lists.chap00.list00_03;public class Main {   public static void main(String[] args) {    System.out.println("木村くんかっこいい！最高！");  }}/* 注意：このコードはコンパイルエラーが発生するコードです */
