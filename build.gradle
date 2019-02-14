@@ -10,7 +10,9 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
 }
-
+ext {
+	lombokVersion = "1.18.2"
+}
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api 'javax.servlet:servlet-api:2.5'
@@ -21,6 +23,10 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+	
+	compileOnly "org.projectlombok:lombok:${lombokVersion}"
+	annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+	testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
 }
 
 // In this section you declare where to find the dependencies of your project
