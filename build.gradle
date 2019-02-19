@@ -12,14 +12,12 @@ plugins {
 }
 ext {
 	lombokVersion = "1.18.2"
+	mysqlVersion = "5.1.47"
 }
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api 'javax.servlet:servlet-api:2.5'
 	api 'org.apache.commons:commons-math3:3.6.1'
-
-    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
-    implementation 'com.google.guava:guava:23.0'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
@@ -27,6 +25,8 @@ dependencies {
 	compileOnly "org.projectlombok:lombok:${lombokVersion}"
 	annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 	testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+	compileOnly "mysql:mysql-connector-java:${mysqlVersion}"
+	
 }
 
 // In this section you declare where to find the dependencies of your project
