@@ -4,7 +4,4 @@ public class CalcLogic {
 		return (a + b);
 	}
 
-	public static int hiku(int a, int b) {
-		return (a - b);
-	}
 }
